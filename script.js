@@ -1,10 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Form Selection
     const form = document.getElementById('registration-form');
+
+    // Feedback Div Selection
     const feedbackDiv = document.getElementById('form-feedback');
 
+    // Form Submission Event Listener
     form.addEventListener('submit', (event) => {
         event.preventDefault();
 
+        // Retrieve User Inputs
         const username = document.getElementById('username').value.trim();
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value.trim();
